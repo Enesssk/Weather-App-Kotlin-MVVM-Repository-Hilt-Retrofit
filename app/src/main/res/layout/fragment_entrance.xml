@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".ui.view.EntranceFragment">
+
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Weather"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="150dp"
+        android:text="App"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        app:layout_constraintStart_toStartOf="@id/titleText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/titleImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tiitlevector"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="-20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/titleText"
+        app:layout_constraintStart_toEndOf="@+id/titleText"
+        app:layout_constraintTop_toTopOf="@+id/titleText" />
+
+    <ImageView
+        android:id="@+id/entranceImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/entranceimage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleImageView" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/detailConstraint"
+        android:layout_width="290dp"
+        android:layout_height="60dp"
+        android:background="@drawable/background_constraint"
+        android:layout_marginTop="40dp"
+        android:elevation="10dp"
+        app:layout_constraintStart_toEndOf="@+id/entranceImageView"
+        app:layout_constraintTop_toTopOf="@+id/entranceImageView">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Write the name of any city whose whether you are curious about. Look at the results!"
+            android:textSize="13dp"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="37dp"
+        android:text="Go"
+        android:textColor="@color/white"
+        android:background="@drawable/gobutton_background"
+        android:layout_marginTop="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailConstraint" />
+</androidx.constraintlayout.widget.ConstraintLayout>
