@@ -13,12 +13,12 @@
         android:id="@+id/titleText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
+        android:layout_marginStart="70dp"
         android:layout_marginTop="150dp"
         android:fontFamily="@font/roboto_medium"
         android:text="Weather"
         android:textColor="@color/black"
-        android:textSize="35dp"
+        android:textSize="40dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,12 +26,12 @@
         android:id="@+id/titleText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="170dp"
+        android:layout_marginStart="190dp"
         android:layout_marginTop="150dp"
         android:text="App"
         android:fontFamily="@font/roboto_medium"
         android:textColor="@color/black"
-        android:textSize="35dp"
+        android:textSize="40dp"
         app:layout_constraintStart_toStartOf="@id/titleText"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/tiitlevector"
         android:layout_marginTop="30dp"
-        android:layout_marginStart="-20dp"
+        android:layout_marginStart="-15dp"
         app:layout_constraintBottom_toBottomOf="@+id/titleText"
         app:layout_constraintStart_toEndOf="@+id/titleText"
         app:layout_constraintTop_toTopOf="@+id/titleText" />
@@ -50,18 +50,20 @@
         android:id="@+id/entranceImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="25dp"
         android:src="@drawable/entranceimage"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleImageView" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/detailConstraint"
-        android:layout_width="290dp"
-        android:layout_height="60dp"
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        android:padding="5dp"
         android:background="@drawable/background_constraint"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="-20dp"
         android:elevation="10dp"
         app:layout_constraintStart_toEndOf="@+id/entranceImageView"
         app:layout_constraintTop_toTopOf="@+id/entranceImageView">
@@ -90,8 +92,20 @@
         android:text="Go"
         android:textColor="@color/white"
         android:background="@drawable/gobutton_background"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="180dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/detailConstraint" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:fontFamily="@font/roboto"
+        android:text="by Enes Kala"
+        android:textColor="#757B81"
+        android:textSize="13dp"
+        app:layout_constraintStart_toStartOf="@+id/titleText2"
+        app:layout_constraintTop_toBottomOf="@+id/titleText2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
