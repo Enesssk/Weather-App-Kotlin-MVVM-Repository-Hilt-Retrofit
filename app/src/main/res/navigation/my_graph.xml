@@ -9,5 +9,14 @@
         android:id="@+id/entranceFragment"
         android:name="com.example.weather_app_kotlin_mvvm_repository.ui.view.EntranceFragment"
         android:label="fragment_entrance"
-        tools:layout="@layout/fragment_entrance" />
+        tools:layout="@layout/fragment_entrance" >
+        <action
+            android:id="@+id/action_entranceFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.weather_app_kotlin_mvvm_repository.ui.view.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
 </navigation>

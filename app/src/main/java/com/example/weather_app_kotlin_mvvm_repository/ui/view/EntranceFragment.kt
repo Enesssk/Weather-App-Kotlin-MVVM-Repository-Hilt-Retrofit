@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import com.example.weather_app_kotlin_mvvm_repository.R
 import com.example.weather_app_kotlin_mvvm_repository.databinding.FragmentEntranceBinding
 
@@ -25,7 +26,9 @@ class EntranceFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = FragmentEntranceBinding.inflate(inflater,container,false)
 
-
+        binding.button.setOnClickListener {
+            Navigation.findNavController(it).navigate(EntranceFragmentDirections.actionEntranceFragmentToMainFragment())
+        }
 
         return binding.root
     }
